@@ -11,6 +11,8 @@
   3) Add an upstream remote pointing to the central repo by issuing the following command:
 
   # $ git remote add upstream https://github.com/moringaschool/coderamp-selfassessments.git
+git remote add upstream https://github.com/moringaschool/coderamp-selfassessments.git
+
 
   4) Complete the Self Assessment.
 
