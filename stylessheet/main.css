@@ -14,7 +14,7 @@ body{
 .background{
     background-image: url(assets/bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 1390px;
     background-color: transparent;
 
@@ -67,7 +67,12 @@ button{
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-    
+ text-align 
+}
+.imagebutton{
+    width: 100;
+    text-align: center;
+    padding-top: 400px;
 }
 footer{
     background-color: cornflowerblue;
