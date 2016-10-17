@@ -1,78 +1,345 @@
-.header{
-    padding: 12px;
-    background-color: cadetblue;
-    width: auto;
-    height: 20%;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+    
 }
-body{
-    width: auto;
-    height: auto;
-    padding-left: 1%;
-    padding-right:1%;
-    background-color: aliceblue;
+
+#mass{
+    width: 50%;
+    height: 66%;
+    position: relative;
+    margin: 0 auto;
 }
-.background{
+
+#header{
+    width:523px;
+    height: 22.5%;
+    background: #292d36;
+    position: relative;
+}
+
+.header h1{
+    color: #f39823;
+    text-align: center;
+    line-height: 100px;
+}
+
+#container{
+    width:97%;
+    height:460px; 
+}
+#container::after{
+    content: "";
+    width: 523px;
+    height: 460px;
+    position: absolute;
+    top:101px;
     background-image: url(assets/bg.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-color: transparent;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;    
+}
+#content-one{
+    width:522px;
+    height:240px;
+}
+#categories{
+    width: 181px;
+    height: 240px;
+    float: left;
+}
+.categories{
+    color: white;
+}
+
+#categories-top{
+    width: 181px;
+    height: 160px;
+}
+#locations-top{
+    width: 181px;
+    height: 160px;
+}
+#categories-icon{
+    width:90.5px;
+    height: 160px;  
+    position: relative;
+    float: left;
+}
+#locations-icon{
+    width:90.5px;
+    height: 160px;  
+    position: relative;
+    float: left;
+}
+#categories-icon img{
+    position: absolute;
+    top:133px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+}
+#locations-icon img{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width:22px;
+    height: 26px;
+}
+#categories-icon-text{
+    width:90.5px;
+    height: 160px; 
+    float: left;
+    position: relative;
+    
+}
+#locations-icon-text{
+    width:90.5px;
+    height: 160px; 
+    float: left;
+    position: relative;
+    
+}
+.categories-icon-text {
+    text-align: left;
+    font-size: 27px;
+    text-shadow: 0px 0.8px 1px #1a1a1a;
 
 }
-h1{
-    color: darkorange;
+#categories-icon-text span{
+    position: absolute;
+    top:128px;
+    left: 6px;
+    
+}
+#locations-icon-text span{
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    
+}
+#categories-content{
+    width:181px;
+    height: 80px;
+    
+}
+.categories-content {
     text-align: center;
-    font-size:70px;
+    text-shadow: 0px 0.8px 1px #1a1a1a;
 }
-.grid,
-.col-1-3,
-.col-2-3 {
-  padding-left: 15px;
-  padding-right: 15px;
+.categories-content span{
+    position: relative;
+    line-height: 34px;
+    font-size: 1.16em;
 }
-.col-1-3,
-.col-2-3  {
-  display: inline-block;
-  vertical-align: top;
-  clear: both;
+#image{
+    width: 160px;
+    height: 240px;
+    float: left;
+    position: relative;
 }
-.col-1-3 {
-  width: 30%;
+#image img{
+    position: absolute;
+    bottom: 0;
 }
-.col-2-3 {
-  width: 66.66%;
+#locations{
+    width: 181px;
+    height: 240px;
+    float: left;
 }
-h,
-h2,
+.locations{
+    color: white; 
+}
+#content-two{
+    width:522px;
+    height:220px;
+    
+}
+#content-two-top{
+    width:522px;
+    height:110px;
+    position: relative;
+    
+}
+#content-two-bottom{
+    width:522px;
+    height:110px;
+    position: relative;
+    
+}
+#content-two-top h1{
+    position: relative;
+    top:22px;
+}
+
+#content-two-top p{
+    position: relative;
+    top:22px;
+}
+.categories-content p{
+    font-size: 1.5em;
+}
+.content-two{
+    color: white;
+}
+#button{
+    width:168px;
+    height: 66px;
+    background: linear-gradient(to bottom, #484a4d 0%,#232427 100%);
+    border-radius: 40px;
+    position: relative;
+    margin: 0 auto;
+    top:4px
+    
+}
+
+.button{
+    color: #f39823;
+}
+.button-content{
+    line-height: 66px;
+}
+#button-content{
+    width:100%;
+    height: 66px;
+}
+#button-content img{
+    position: absolute;
+    top:16px;
+    left: 26px;
+    transform: scale(0.8);
+    
+}
+#button-content h3{
+    position: absolute;
+    left: 68px;
+}
 h3{
-    color: snow;
-    text-align: center;
+    font-size: 1.5em;
 }
-.row{
-    padding-top: 120px;
+#footer2{
+    width: 522px;
+    height: 100px;
+    background: #565a5b;
+    position: relative;
+    box-shadow: inset 0px 2px 3.1px -3.6px rgba(0,0,0,0.75);
+    
 }
-.container{
-    padding-top: 120px;
-    padding-bottom: 20px;
+
+#deals{
+    width:174px;
+    height: 100px;
+    position:relative;
+    float: left;
+    box-shadow: inset -2px -1px 1px -1px grey;
+
+    
 }
-button{
-    background-color: cornflowerblue;
-    align-content: center;
-    padding-left: 30px;
-    padding-right: 40px;
-    -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
- text-align 
+#followers{
+    width:174px;
+    height: 100px;
+    position:relative;
+    float: left;
+    
 }
-.imagebutton{
-    width: 100;
-    text-align: center;
-    padding-top: 400px;
+#following{
+    width:174px;
+    height: 100px;
+    position:relative;
+    float: left;
+    box-shadow: inset 2px -1px 1.05px -1px grey;
 }
-footer{
-    background-color: cornflowerblue;
+
+#camera{
+    width: 87px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+#camera img{
+    position: absolute;
+    left: 35px;
+    top:28px; 
+    transform: scale(0.88);
+}
+#followers-icon{
+    width: 72px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+#followers-icon img{
+    position: absolute;
+    left: 30px;
+    top:28px;
+    transform: scale(0.88);
+}
+#following-icon{
+    width: 72px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+#following-icon img{
+    position: absolute;
+    left: 30px;
+    top:28px; 
+    transform: scale(0.88);
+}
+#camera-content{
+    width: 87px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+#camera-content h2{
+    position: absolute;
+    top:26px;
+}
+#camera-content span{
+    position: absolute;
+    top:54px;
+}
+
+.camera-content{
+    color: white;
+}
+.camera-content h2{
+    font-size: 24px;
+    font-family: 'lato';
+    font-weight:500;
+}
+.camera-content span{
+    color: #bebebe;
+}
+#followers-content{
+    width: 102px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+#followers-content h2{
+    position: absolute;
+    top:26px;
+}
+#followers-content span{
+    position: relative;
+    top:54px;
+}
+
+#following-content{
+    width: 102px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+#following-content h2{
+    position: absolute;
+    top:26px;
+}
+#following-content span{
+    position: relative;
+    top:54px;
 }
